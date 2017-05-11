@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Guessing Game</title>
+    <meta charset="UTF-8">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.2/require.min.js" integrity="sha256-Vjusm6Kh2U7/tb6jBh+MOfxnaf2TWsTph34bMKhC1Qc=" crossorigin="anonymous"></script>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="game.css">
+  </head>
+  <body>
+    <div class="container">
+      <div class="page-header text-center">
+        <h1 class="text-info">Guessing Game <small>Guess a number between <span id="min-display"></span> and <span id="max-display"></span>. Range is <span id="range"></span> numbers</small></h1>
+        <span class="text-info">Set your own range here: </span>
+        <input id="min-value" type="number" min=-99 max=99 autocomplete="off">
+        <input id="max-value" type="number" min=-99 max=99 autocomplete="off">
+        <button class="btn btn-warning" id="restart">Restart</button>
+      </div>
+      <p class="text-info text-center" id="help">Click on a number!</p>
+      <div id="buttons"></div>
+    </div>
+    <script type="text/javascript" src="game.js"></script>
+  </body>
+</html>

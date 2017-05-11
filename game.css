@@ -1,0 +1,14 @@
+#help{
+  margin-top: 15px;
+}
+.btn-info, .btn-success{
+  width: 54.2px;
+}
+
+#restart{
+  margin-left: 20px;
+}
+
+input[type="number"]{
+  max-width: 44px;
+}
